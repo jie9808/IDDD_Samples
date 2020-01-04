@@ -18,6 +18,9 @@ import java.util.UUID;
 
 import com.saasovation.common.domain.model.AbstractId;
 
+/**
+ * @author Administrator
+ */
 public final class ProcessId extends AbstractId {
 
     private static final long serialVersionUID = 1L;

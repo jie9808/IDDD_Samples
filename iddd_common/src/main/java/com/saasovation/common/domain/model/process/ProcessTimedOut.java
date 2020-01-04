@@ -18,6 +18,9 @@ import java.util.Date;
 
 import com.saasovation.common.domain.model.DomainEvent;
 
+/**
+ * @author Administrator
+ */
 public class ProcessTimedOut implements DomainEvent {
 
     private int eventVersion;

@@ -14,6 +14,9 @@
 
 package com.saasovation.common;
 
+/**
+ * @author Administrator
+ */
 public class AssertionConcern {
 
     protected AssertionConcern() {

@@ -263,7 +263,6 @@ public class Tenant extends ConcurrencySafeEntity {
                 return invitation;
             }
         }
-
         return null;
     }
 

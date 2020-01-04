@@ -16,17 +16,47 @@ package com.saasovation.common.domain.model.process;
 
 import java.util.Collection;
 
+/**
+ * @author Administrator
+ */
 public interface TimeConstrainedProcessTrackerRepository {
 
+    /**
+     * @param aTimeConstrainedProcessTracker
+     */
     public void add(TimeConstrainedProcessTracker aTimeConstrainedProcessTracker);
 
+    /**
+     *
+     * @return
+     */
     public Collection<TimeConstrainedProcessTracker> allTimedOut();
 
+    /**
+     *
+     * @param aTenantId
+     * @return
+     */
     public Collection<TimeConstrainedProcessTracker> allTimedOutOf(String aTenantId);
 
+    /**
+     *
+     * @param aTenantId
+     * @return
+     */
     public Collection<TimeConstrainedProcessTracker> allTrackers(String aTenantId);
 
+    /**
+     *
+     * @param aTimeConstrainedProcessTracker
+     */
     public void save(TimeConstrainedProcessTracker aTimeConstrainedProcessTracker);
 
+    /**
+     *
+     * @param aTenantId
+     * @param aProcessId
+     * @return
+     */
     public TimeConstrainedProcessTracker trackerOfProcessId(String aTenantId, ProcessId aProcessId);
 }

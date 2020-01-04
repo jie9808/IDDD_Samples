@@ -18,11 +18,16 @@ import java.io.Serializable;
 
 import com.saasovation.common.AssertionConcern;
 
+/**
+ * 用户描述
+ * @author Administrator
+ */
 public final class UserDescriptor extends AssertionConcern implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     private String emailAddress;
+
     private TenantId tenantId;
     private String username;
 

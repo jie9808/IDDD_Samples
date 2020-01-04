@@ -14,6 +14,9 @@
 
 package com.saasovation.common.domain.model;
 
+/**
+ * @author Administrator
+ */
 public interface Identity {
 
     public String id();

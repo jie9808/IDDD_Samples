@@ -26,6 +26,7 @@ public abstract class AbstractId
 
     private String id;
 
+    @Override
     public String id() {
         return this.id;
     }
