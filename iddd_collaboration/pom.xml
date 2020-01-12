@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>IDDD_Samples</groupId>
+  <parent>
+    <groupId>com.sassovation</groupId>
+    <artifactId>IDDD_Samples</artifactId>
+    <version>1.0</version>
+  </parent>
   <artifactId>iddd_collaboration</artifactId>
-  <version>unspecified</version>
+
+  <properties>
+    <java.version>1.8</java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -13,16 +23,14 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>IDDD_Samples</groupId>
+      <groupId>com.sassovation</groupId>
       <artifactId>iddd_common</artifactId>
-      <version>unspecified</version>
-      <scope>compile</scope>
+      <version>${project.parent.version}</version>
     </dependency>
     <dependency>
       <groupId>org.jboss.resteasy</groupId>
       <artifactId>resteasy-jaxrs</artifactId>
-      <version>2.0.1.GA</version>
-      <scope>compile</scope>
+      <version>3.9.3.Final</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
