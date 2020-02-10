@@ -14,9 +14,6 @@
 
 package com.saasovation.identityaccess.application;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.transaction.annotation.Transactional;
-
 import com.saasovation.identityaccess.application.command.ActivateTenantCommand;
 import com.saasovation.identityaccess.application.command.AddGroupToGroupCommand;
 import com.saasovation.identityaccess.application.command.AddUserToGroupCommand;
